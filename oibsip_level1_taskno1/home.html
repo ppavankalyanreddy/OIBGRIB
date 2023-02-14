@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-image: linear-gradient(to right,skyblue,white);
+        }
+
+        .nav-items{
+            position: relative;
+            top: 0;
+            display: flex;
+            width: 100%;
+            background-image: linear-gradient(to right,rgb(133, 209, 236),rgb(107, 107, 107));
+        }
+
+        .logo{
+            width: 40%;
+            display: flex;
+            justify-content:start;
+            align-content: end;
+            font-size: 2rem;
+            font-family: 'pacifico';
+            color: rgb(13, 100, 100);
+        }
+
+        .nav-links{
+            width: 60%;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+        }
+
+        .nav-links>ul{
+            margin: 0px;
+            display: flex;
+            align-content: end;
+            width: 100%;
+            justify-content: end;
+            list-style: none;
+        }
+
+        .nav-links>ul>li{
+            margin: 10px;
+        }
+
+        .nav-links>ul>li>a{
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: rgb(167, 199, 194);
+        }
+
+        .nav-links>ul>li>a:hover{
+            font-size: 1.3rem;
+            color: rgb(213, 218, 217);
+        }
+
+        .content{
+            margin: 0px;
+            padding: 0;
+            display: flex;
+            align-items: flex-start;
+            align-content: center;
+        }   
+
+        .content-container{
+            width: 50%;
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-self: center;
+        }
+
+        .img-container{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            justify-content: center;
+        }
+
+        .info{
+            font-size: 3rem;
+            font-family: 'pacifico';
+            color: rgb(2, 99, 118);
+            text-align: center;
+            width: 100%;
+        }
+
+        .read-now{
+            font-size: 2rem;
+            text-align: center;
+            background-color: rgb(1, 181, 252);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            height: 3rem;
+            width: 14rem;
+        }
+
+        .read-now:hover{
+            height: 3.5rem;
+            width: 14.5rem;
+        }
+
+        .img{
+            max-height: 710px;
+            max-width: 400px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-self: center;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <nav class="nav-items">
+        <div class="logo">
+            Langing Page
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutUs">About Us</a></li>
+                <li><a href="#ContactUs">Contact Us</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="content">
+    <div class="content-container">
+        <p class="info">What is a Landing <br> Page & Why is it <br>Important? </p>
+        <button class="read-now">Read Now ></button>
+    </div>
+    <div class="img-container">
+        <img class="img" src="https://www.freepnglogos.com/uploads/man-png/thinking-man-png-image-without-background-web-icons-png-28.png" alt="laptop">
+    </div>
+    </div>
+</body>
+</html>
